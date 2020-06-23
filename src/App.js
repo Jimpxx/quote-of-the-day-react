@@ -22,9 +22,11 @@ function App() {
     return (
         <div className="App">
             <h1>Quote of the Day</h1>
-            <p>{quote}</p>
-            <p>- {author}</p>
-            <button onClick={getQuote}>Quote</button>
+            <div className="quote">
+                <p>{quote}</p>
+                {quote ? <p>- {author}</p> : <p></p>}
+            </div>
+            <button onClick={getQuote}>Get Quote</button>
         </div>
     );
 }
