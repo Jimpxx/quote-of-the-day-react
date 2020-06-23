@@ -2,4 +2,6 @@
 
 This app displays a quote of the day. It can only display one quote per day.
 
-This app is created with React.js
+This app is created with React.js.
+
+It fetches its quotes from [https://quotes.rest/](https://quotes.rest/)
