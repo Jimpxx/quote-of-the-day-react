@@ -21,12 +21,14 @@ function App() {
 
     return (
         <div className="App">
-            <h1>Quote of the Day</h1>
+            <div className="header">
+                <h1>Quote of the Day</h1>
+                <button onClick={getQuote}>Get Quote</button>
+            </div>
             <div className="quote">
                 <p>{quote}</p>
-                {quote ? <p>- {author}</p> : <p></p>}
+                {quote ? <p className="author">- {author}</p> : <p></p>}
             </div>
-            <button onClick={getQuote}>Get Quote</button>
         </div>
     );
 }
